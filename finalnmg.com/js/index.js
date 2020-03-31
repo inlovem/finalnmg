@@ -12,6 +12,18 @@ $(function () {
     });
 });
 
+jQuery(function ($) {
+    $('.carousel').carousel();
+    var caption = $('div.carousel-item:nth-child(1) .media-content');
+    $('.new-caption-area').html(caption.html());
+    caption.css('display', 'none');
+
+    $(".carousel").on('slide.bs.carousel', function (evt) {
+        var caption = $('div.carousel-item:nth-child(' + ($(evt.relatedTarget).index() + 1) + ') .media-content');
+        $('.new-caption-area').html(caption.html());
+        caption.css('display', 'none');
+    });
+});
 //bottom of front page slideshow--------------------------
 $("#slideshow > div:gt(0)").hide();
 

@@ -21,13 +21,12 @@
   <script src="js/index.js"></script>
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 </head>
-
 <nav class="navbar  fixed-top navbar-dark">
   <a class="navbar-brand" <a href="index.html">
       <img class="glogo" src="images/glogo.svg">
   </a>
   <span class="nav">
-  <button class="menu collapsed" id="menu-text" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <button class="menu collapsed" id="menu-text" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
     <span class="hover-menu strike">menu
     </span>
   </button>
@@ -37,24 +36,56 @@
     <span class="icon-bar bottom"></span>
   </button>
 </span>
-  <div class="collapse navbar-collapse" id="navbarSupportedContent">
-    <div class="overlay">
-
+<div class="collapse navbar-collapse " id="navbarSupportedContent">
+  <div class="container-fluid">
+    <!-- Control the column width, and how they should appear on different devices -->
+    <div class="row" id="top">
+      <div class="col" id="left">
+      <h4>Just as despair can come to one only from other human beings, hope, too, can be given to one only by other human beings.</h4>
+       </div>
+       <div class="col-sm-01">
+       <div class="vl" id="middle"> </div>
+     </div>
+       <div class="col-md"  id="right">
+  <ul class="navbar-nav">
+       <li class="nav-item"><a class="btn-2 from-middle-1" href="#about">Home</a> </li>
+       <li class="nav-item"><a class="btn-2 from-middle-1" href="#social">Film</a> </li>
+       <li class="nav-item"><a class="btn-2 from-middle-1" href="#contact">Education</a> </li>
+       <li class="nav-item"><a class="btn-2 from-middle-1" href="#contact">Testimonies</a> </li>
+       <li class="nav-item"><a class="btn-2 from-middle-1" href="#portfolio">Regions</a> </li>
+       <li class="nav-item"><a class="btn-2 from-middle-1" href="#social">About</a> </li>
+     </ul>
+   </div>
+ </div>
+ <div class="row">
+   <div class="col-md" id="bottom">
+     <div class="text-center bottom ">
+       <!-- Social buttons -->
+       <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+       <!-- Facebook -->
+       <a type="button" href="https://www.facebook.com/TTUHonors" class="btn-floating btn-fb">
+         <i class="fab fa-facebook-f"></i>
+       </a>
+       <!-- Twitter -->
+       <a type="button" href="https://twitter.com/TTUHonors" class="btn-floating btn-tw">
+         <i class="fab fa-twitter"></i>
+       </a>
+       <!-- Google +-->
+       <a type="button" href="https://www.youtube.com/user/TTUHonorsCollege" class="btn-floating btn-yt">
+         <i class="fab fa-youtube"></i>
+       </a>
+       <!-- Dribbble -->
+       <a type="button" href="https://www.instagram.com/ttuhonorscollege/" class="btn-floating btn-instagram">
+         <i class="fab fa-instagram"></i>
+       </a>
+     </div>
     </div>
-  </div>
+</div>
 </nav>
-
 <body class="body">
-    <div class="content">
         <div class="page-title">
-            <h1></h1>
-            <h1></h1>
-            <h1></h1>
-            <h1></h1>
-            <h1></h1>
-            <h1></h1>
         </div>
-        <div class="about-container">
+        <div class="about">
             <div class="bio-container1">
                 <div class="biojob">
                     <h3>Director</h3>
@@ -87,10 +118,6 @@
                         <h2>Jonathan Seaborn</h2>
                     </div>
             </div>
-
-
-
-
             <div class="bio-container3">
                 <div class="biojob">
                     <h3>Producer</h3>
@@ -107,107 +134,152 @@
                 <div class="bioname">
                     <h2>Aliza Wong</h2>
                  </div>
+               </div>
             </div>
-        </div>
-             <div class="school-row">
-                <div class="school-column">
-                  <a href="www.reddit.com">
-                    <div class="btn-2 from-middle-1">Learn More</div>
-                  </a>
-                    <img src="images/medal.jpg" class="schoolpic2">
-                    <img src="images/emmy.jpg" class="schoolpic1">
-                      <a href="https://kttz.org/">
-                      <div class="btn-2 from-middle-1">Learn More</div>
-                    </a>
-                </div>
+<!-- /.bottom-carousel --></div>
             </div>
-
-
-    </div>
-
-
-
-
+            <div id="bottom-carousel" class="carousel slide carousel-fade" data-ride="carousel" data-interval="9000">
+              <div class="carousel-caption" id="greeting"><h5 class="welcome">We would  love to hear from you</h5>
+                    <div class="hr"></div>
+                    <div class="hr" id="plus"></div>
+                    <div id="work" class="btn-1">Work With Us</div>
+                  </div>
+                <div class="carousel-inner" role="listbox">
+                    <div class="carousel-item active">
+                        <a href="http://www.depts.ttu.edu/honors/">
+                             <picture>
+                              <source srcset="images/medal.jpg" media="(min-width: 1400px)">
+                              <source srcset="images/medal.jpg" media="(min-width: 769px)">
+                               <source srcset="images/medal.jpg" media="(min-width: 577px)">
+                              <img srcset="images/medal.jpg" alt="responsive image" class="d-block img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                    <!-- /.carousel-item -->
+                    <div class="carousel-item">
+                        <a href="https://tv.kttz.org/">
+                             <picture>
+                              <source srcset="images/emmy.jpg" media="(min-width: 1400px)">
+                              <source srcset="images/emmy.jpg" media="(min-width: 769px)">
+                               <source srcset="images/emmy.jpg" media="(min-width: 577px)">
+                              <img srcset="images/emmy.jpg" alt="responsive image" class="d-block img-fluid">
+                            </picture>
+                        </a>
+                    </div>
+                  </div>
+            </div>
 
   <!-- Site footer -->
+          <!-- Footer -->
+          <footer class="page-footer font-small mdb-color lighten-3 pt-4">
+            <!-- Footer Links -->
+            <div class="container text-center text-md-left">
+            <!-- Grid row -->
+              <div class="row">
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mr-auto my-md-4 my-0 mt-4 mb-1">
+                  <!-- Content -->
+                  <div class="footer-logo">
+                  <img class="footer-glogo" src="images/glogo.svg">
+                </div>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 mx-auto my-md-4 my-0 mt-4 mb-1">
+                  <!-- Links -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Learn More</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <div class="footer-button">
+                         <a class="btn-2 from-middle-1" href="#!">Home</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="footer-button"><a class="btn-2 from-middle-1" href="#!">Regions</a>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="footer-button"><a class="btn-2 from-middle-1" href="#!">Testimonies</a></div>
+                    </li>
+                    <li>
+                      <div class="footer-button"><a class="btn-2 from-middle-1" href="#!">Film<a></div>
+                    </li>
+                    <li>
+                      <div class="footer-button"><a class="btn-2 from-middle-1" href="#!">About</a></div>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-4 col-lg-3 mx-auto my-md-4 my-0 mt-4 mb-1">
+                  <!-- Contact details -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Address</h5>
+                  <ul class="list-unstyled">
+                    <li>
+                      <p>
+                        <i class="fas fa-home mr-3"></i> 2500 Broadway Lubbock, Texas 7940</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-envelope mr-3"></i> honors@ttu.edu</p>
+                    </li>
+                    <li>
+                      <p>
+                        <i class="fas fa-phone mr-3"></i>806.742.2011</p>
+                    </li>
+                  </ul>
+                </div>
+                <!-- Grid column -->
+                <hr class="clearfix w-100 d-md-none">
+                <!-- Grid column -->
+                <div class="col-md-2 col-lg-2 text-center mx-auto my-4">
 
-  <footer>
-              <div class="centered clearfix">
-              <div class="footer-logo">
-              <img class="footer-glogo" src="images/glogo.svg">
-              <div class="footer-social">
-                  <a href="https://www.facebook.com/" class="facebook">
-                      <svg viewBox="0 0 33 33"><g><path d="M 17.996,32L 12,32 L 12,16 l-4,0 l0-5.514 l 4-0.002l-0.006-3.248C 11.993,2.737, 13.213,0, 18.512,0l 4.412,0 l0,5.515 l-2.757,0 c-2.063,0-2.163,0.77-2.163,2.209l-0.008,2.76l 4.959,0 l-0.585,5.514L 18,16L 17.996,32z"></path></g></svg>
+                  <!-- Social buttons -->
+                  <h5 class="font-weight-bold text-uppercase mb-4">Follow Us</h5>
+
+                  <!-- Facebook -->
+                  <a type="button" href="https://www.facebook.com/TTUHonors" class="btn-floating btn-fb">
+                    <i class="fab fa-facebook-f"></i>
                   </a>
-                  <a href="https://twitter.com/" class="twitter">
-                      <svg viewBox="0 0 33 33"><g><path d="M 32,6.076c-1.177,0.522-2.443,0.875-3.771,1.034c 1.355-0.813, 2.396-2.099, 2.887-3.632 c-1.269,0.752-2.674,1.299-4.169,1.593c-1.198-1.276-2.904-2.073-4.792-2.073c-3.626,0-6.565,2.939-6.565,6.565 c0,0.515, 0.058,1.016, 0.17,1.496c-5.456-0.274-10.294-2.888-13.532-6.86c-0.565,0.97-0.889,2.097-0.889,3.301 c0,2.278, 1.159,4.287, 2.921,5.465c-1.076-0.034-2.088-0.329-2.974-0.821c-0.001,0.027-0.001,0.055-0.001,0.083 c0,3.181, 2.263,5.834, 5.266,6.438c-0.551,0.15-1.131,0.23-1.73,0.23c-0.423,0-0.834-0.041-1.235-0.118 c 0.836,2.608, 3.26,4.506, 6.133,4.559c-2.247,1.761-5.078,2.81-8.154,2.81c-0.53,0-1.052-0.031-1.566-0.092 c 2.905,1.863, 6.356,2.95, 10.064,2.95c 12.076,0, 18.679-10.004, 18.679-18.68c0-0.285-0.006-0.568-0.019-0.849 C 30.007,8.548, 31.12,7.392, 32,6.076z"></path></g></svg>
+                  <!-- Twitter -->
+                  <a type="button" href="https://twitter.com/TTUHonors" class="btn-floating btn-tw">
+                    <i class="fab fa-twitter"></i>
                   </a>
-                  <a href="https://www.linkedin.com/" class="linkedin">
-                      <svg viewBox="0 0 512 512"><g><path d="M186.4 142.4c0 19-15.3 34.5-34.2 34.5 -18.9 0-34.2-15.4-34.2-34.5 0-19 15.3-34.5 34.2-34.5C171.1 107.9 186.4 123.4 186.4 142.4zM181.4 201.3h-57.8V388.1h57.8V201.3zM273.8 201.3h-55.4V388.1h55.4c0 0 0-69.3 0-98 0-26.3 12.1-41.9 35.2-41.9 21.3 0 31.5 15 31.5 41.9 0 26.9 0 98 0 98h57.5c0 0 0-68.2 0-118.3 0-50-28.3-74.2-68-74.2 -39.6 0-56.3 30.9-56.3 30.9v-25.2H273.8z"></path></g></svg>
+                  <!-- Google +-->
+                  <a type="button" href="https://www.youtube.com/user/TTUHonorsCollege" class="btn-floating btn-yt">
+                    <i class="fab fa-youtube"></i>
                   </a>
+                  <!-- Dribbble -->
+                  <a type="button" href="https://www.instagram.com/ttuhonorscollege/" class="btn-floating btn-instagram">
+                    <i class="fab fa-instagram"></i>
+                  </a>
+                </div>
+                <!-- Grid column -->
               </div>
-              </div>
-              <div class="footer-contact">
-              <h3><a href="">Contact</a></h3>
-              <p><a href="mailto:">honors@ttu.edu</a></p>
-              <p><a href="tel:">806.742.2011</a></p>
-              <p><a href="">2500 Broadway<br />Lubbock, Texas 79409</a></p>
-              </div>
-              <div class="footer-navigation">
-              <div class="footer-links-holder">
-                  <h3><a href="">Educate</a></h3>
-                  <ul class="footer-links">
-                      <li><a href="">Survivor's Stories</a></li>
-                      <li><a href="">Regions of Past Genocide</a></li>
-                  </ul>
-              </div>
-              <div class="footer-links-holder">
-                  <h3><a href="">Film</a></h3>
-                  <ul class="footer-links">
-                  </ul>
-              </div>
-              <div class="footer-links-holder">
-                  <h3><a href="">About</a></h3>
-                  <ul class="footer-links">
-                      <li><a href="team.html">Meet The Team</a></li>
-                      <li><a href="thgc.html">Supporters</a></li>
-                  </ul>
-              </div>
-              </div>
-              </div>
-              <div class="bottom-bar">
-               All Rights Reserved © Texas Tech University 2019 | <a href="">Privacy Policy</a> | <a href="">Terms of Service</a>
-              </div>
+              <!-- Grid row -->
+            </div>
+            <!-- Footer Links -->
+            <!-- Copyright -->
+            <div class="footer-copyright text-center py-3">© 2020 Copyright:
+              <a href="http://www.depts.ttu.edu/honors/"> Texas Tech Honors College </a>
+            </div>
+            <!-- Copyright -->
           </footer>
-
-
-
-
-
-
+          <!-- Footer -->
 <script>
 
-
-$(document).ready(function () {
-    $(".collapsed").click(function () {
-        $('body').css('overflow', 'hidden');  //ADD THIS
-    });
-
-    $(document).on('click', '.collapsed', function () {
-        $('body').css('overflow', 'auto');  //ADD THIS
-    });
+$(document).ready(function(){
+  $(".collapsed").click(function(){
+    $("body").toggleClass("body-stop");
+  });
 });
+
 
 AOS.init();
 
 
 </script>
-
-
-
- <footer>
-    <div class="foot">
-    </div>
-</footer>
 </body>
 </html>
